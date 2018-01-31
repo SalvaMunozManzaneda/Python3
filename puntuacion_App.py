@@ -19,13 +19,13 @@ def score_to_rating_string(av_score):
     Convert the average score, which should be between 0 and 5,
     into a string rating.
     """
-    if av_score <= 1:
+    if av_score < 1:
         rating = "Terrible"
-    elif av_score <= 2:
+    elif av_score < 2:
         rating = "Bad"
-    elif av_score <= 3:
+    elif av_score < 3:
         rating = "OK"
-    elif av_score <= 4:
+    elif av_score < 4:
         rating = "Good"
     else:
         rating = "Excellent"
